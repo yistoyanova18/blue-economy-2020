@@ -1,3 +1,105 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>index</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<style>
 
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d4f7d4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #559e54;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+  
+ a:link {
+  color:#d4f7d4; 
+  background-color: transparent; 
+  text-decoration: none;
+  float:right;
+}
+
+a:visited {
+  color:#d4f7d4 ;
+  background-color: transparent;
+  text-decoration: none;
+  float:right;
+}
+
+a:hover {
+  color:#559e54;
+  background-color: transparent;
+  text-decoration: none;
+  float:right;
+}
+
+</style>
+<meta charset="utf-8">
+  </head>
+  <body style="background-color: #FFEEAA;">
+  
+  <div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home page</a>
+  <a href="#">smth</a>
+  <a href="#">smth</a>
+  <a href="#">smth</a>
+   <a href="#">smth</a>
+  <a href="#">smth</a>
+</div>
+<button class="openbtn" onclick="openNav()">☰</button>  
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+
+    <h1 class="waves">This is a Blue Heading</h1>
+	<div class="footer">
+	   <p>Footer</p>
+	</div>
+	
+  </body>
 </html>
