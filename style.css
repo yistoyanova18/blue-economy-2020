@@ -1,10 +1,39 @@
-.waves {
-  background-image:url('waves.jpeg');
+body, html {
+    height: 100%;
+}
+
+.waves{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("waves.jpeg");
+
+  /* Set a specific height */
+  height: 20%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  height:200px;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.waves-text{
   text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.text{
+	text-align: justify;
+	padding-top:20px;
+	padding-right:200px;
+    padding-left:200px;
+	font-size: large;
+	font-family: "Times New Roman", Times, serif;
+	text-indent: 50px;
 }
 
 .footer {
@@ -17,3 +46,69 @@
   color: white;
   text-align: center;
 }
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #568e8f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: white;
+  background-color:#4d7e80;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+  
+ a:link {
+  color:#d4f7d4; 
+  background-color: transparent; 
+  text-decoration: none;
+  float:right;
+}
+
+a:visited {
+  color:#d4f7d4 ;
+  background-color: transparent;
+  text-decoration: none;
+  float:right;
+}
+
+a:hover {
+  color:#559e54;
+  background-color: transparent;
+  text-decoration: none;
+  float:right;
