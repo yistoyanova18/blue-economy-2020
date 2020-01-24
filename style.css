@@ -1,111 +1,81 @@
-body, html {
-    height: 100%;
-}
-
-.waves {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    height:50vh;
-    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
-    background-size: cover;
+.topnav {
     overflow: hidden;
-    width:100%;
+    background-color: #333;
+    height: 50px;
+    width: 100%;
 }
 
-/* Place text in the middle of the image */
-.btnAlignment {
-    align-self: left;
-    margin-left: auto;
-}
-
-.text{
-	text-align: justify;
-	padding-top:20px;
-	padding-right:200px;
-    padding-left:200px;
-	font-size: large;
-	font-family: "Times New Roman", Times, serif;
-	text-indent: 50px;
-}
-
-.footer {
- position:absolute;
-
-  height:100px;
-  width: 100%;
-  background-color: #004d80;
-  color: white;
-  text-align: center;
-  margin-bottom:0;
-}
-
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #568e8f;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidepanel a:hover {
-  color: white;
-  background-color:#4d7e80;
-}
-
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-    .openbtn:hover {
-        background-color: #444;
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
     }
- a:link {
-  color:#d4f7d4; 
-  background-color: transparent; 
-  text-decoration: none;
-  float:right;
+
+        .topnav a:hover {
+            background-color: #0099cc;
+            color: white;
+        }
+
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-a:visited {
-  color:#d4f7d4 ;
-  background-color: transparent;
-  text-decoration: none;
-  float:right;
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.8;
 }
 
-a:hover {
-    color: #559e54;
-    background-color: transparent;
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
     text-decoration: none;
-    float: right;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+    .overlay a:hover, .overlay a:focus {
+        color: #1a8cff;
+    }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
 
 h1 {
@@ -160,3 +130,79 @@ h1 {
     }
 }
 
+.waves {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+#site_content {
+    width: 854px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 0 24px 20px 20px;
+    background: #FFF;
+}
+
+.sidebar {
+    float: right;
+    width: 210px;
+    padding: 0 15px 20px 15px;
+}
+
+    .sidebar ul {
+        width: 198px;
+        padding: 4px 0 0 0;
+        margin: 4px 0 30px 0;
+    }
+
+    .sidebar li {
+        list-style: none;
+        padding: 0 0 7px 0;
+    }
+
+        .sidebar li a, .sidebar li a:hover {
+            padding: 0 0 0 40px;
+            display: block;
+            background: transparent url(link.png) no-repeat left center;
+        }
+
+            .sidebar li a.selected {
+                color: #7E2451;
+                text-decoration: none;
+            }
+
+#content {
+    text-align: left;
+    float: left;
+    width: 595px;
+    padding: 0;
+}
+
+    #content ul {
+        margin: 2px 0 22px 0px;
+    }
+
+        #content ul li {
+            list-style-type: none;
+            background: url(bullet.png) no-repeat;
+            margin: 0 0 6px 0;
+            padding: 0 0 4px 25px;
+            line-height: 1.5em;
+        }
+
+.footer {
+    position: absolute;
+    height: 70px;
+    width: 737px;
+    background-color: #0099cc;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
