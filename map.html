@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 <body>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1p9BSIkNbThfz0xEnBGnwERJu6BxR8H2o" width="640" height="480"></iframe>
+    <div class="topnav"> <a class="active" href="home.html" style="font-size:20px;cursor:pointer"> Home</a>
+    <a><span style="font-size:20px;cursor:pointer" onclick="openNav()"> Hydropower</span></a> 
+    <a><span style="font-size:20px;cursor:pointer" onclick="openNav()"> Types of hydropower</span>
+        </a> <a href="map.html" style="font-size:20px;cursor:pointer">Map</a> 
+    <a href="game.html" style="font-size:20px;cursor:pointer">Game</a> 
+    <a href="quiz.html" style="font-size:20px;cursor:pointer">Quiz</a> 
+    <a href="About-us.html" style="font-size:20px;cursor:pointer">About Us</a> 
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+        <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a> 
+        <a href="#">Contact</a>
+            </div> 
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+        </div> 
+    <div class="waves"> 
+    <h1 aria-label="Hydroelectric stations"></h1> 
+        </div> 
+    <center><div> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1p9BSIkNbThfz0xEnBGnwERJu6BxR8H2o" width="1000" height="800"></iframe> 
+        </div> </center> 
+    <div><p></p></div> 
+    <div class="footer"> <p>Footer</p> </div>
 </body>
 </html>
