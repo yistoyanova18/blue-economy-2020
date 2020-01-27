@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+    <script>
+        function SENT() {
+            document.getElementById("demo").innerHTML = "SENT";
+        }
+    </script>
+    <script>
+        function SENT2() {
+            document.getElementById("demo").innerHTML = "SENT";
+        }
+    </script>
+    <script>
+        function SENT3() {
+            document.getElementById("demo").innerHTML = "SENT";
+        }
+    </script>
     <div class="topnav">
         <a class="active" href="index.html" style="font-size:20px;cursor:pointer"> Home</a>
         <a><span style="font-size:20px;cursor:pointer" onclick="openNav()"> Hydropower</span></a>
@@ -50,7 +64,19 @@
                     <p class="title">Manager</p>
                     <p>Information </p>
 
-                    <p><button class="button">Contact</button></p>
+
+                    <div class="boxcontact" id="demo" style="display:none">
+                        <form action="/action_page.php">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        </form><button class="button2" onclick="SENT()">Submit</button>
+                    </div>
+
+                    <button class="button" type="button" onclick="document.getElementById('demo').style.display='block'">Contact</button>
+
                 </div>
             </div>
         </div>
@@ -63,7 +89,19 @@
                     <p class="title">Developer</p>
                     <p>Information</p>
 
-                    <p><button class="button">Contact</button></p>
+
+                    <div class="boxcontact" id="demo" style="display:none">
+                        <form action="/action_page.php">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        </form><button class="button2" onclick="SENT2()">Submit</button>
+                    </div>
+
+                    <button class="button" type="button" onclick="document.getElementById('demo').style.display='block'">Contact</button>
+
                 </div>
             </div>
         </div>
@@ -76,13 +114,22 @@
                     <p class="title">Designer</p>
                     <p>Information</p>
 
-                    <p><button class="button">Contact</button></p>
+                    <div class="boxcontact" id="demo" style="display:none">
+                        <form action="/action_page.php">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                        </form><button class="button2" onclick="SENT3()">Submit</button>
+                    </div>
+
+                    <button class="button" type="button" onclick="document.getElementById('demo').style.display='block'">Contact</button>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+
 </body>
 </html>

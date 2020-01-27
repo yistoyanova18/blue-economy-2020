@@ -271,6 +271,34 @@ h1 {
 .title {
     color: grey;
 }
+/*contact*/
+
+.boxcontact {
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
 .button {
     border: none;
@@ -284,10 +312,22 @@ h1 {
     width: 100%;
 }
 
-    .button:hover {
-        background-color: #555;
-    }
+.button2 {
+    border-radius: 20px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #00cc00;
+    text-align: center;
+    cursor: pointer;
+    width: 100%
+}
 
+.button:hover {
+    background-color: #555;
+}
+/*contact*/
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
