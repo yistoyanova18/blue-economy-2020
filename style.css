@@ -1,12 +1,14 @@
 html {
-            box-sizing: border-box;
-        }
+    box-sizing: border-box;
+}
+
 p {
     font-family: font-family: "Times New Roman", Times, serif;
     margin: 0;
     text-indent: 50px;
     letter-spacing: 2px;
 }
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -145,11 +147,25 @@ h1 {
     overflow: hidden;
     width: 100%;
 }
+/*map*/
+.map {
+    border: 8px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px white, 0 0 25px #0099cc;
+    width: 1000px;
+    height: 850px;
+}
 /*index collums*/
 .imageblue-economy {
-    height:200px;
-    width:100%;
+    height: 200px;
+    width: 100%;
 }
+    /*for hover*/
+    .imageblue-economy:hover {
+        border: 5px;
+        box-shadow: 1px 1px 2px white, 0 0 25px #0099cc;
+    }
+
 #site_content {
     width: 90%;
     overflow: hidden;
@@ -212,72 +228,73 @@ h1 {
     color: white;
     text-align: center;
     margin-bottom: 0;
-	position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
-  opacity:0.6;
+    opacity: 0.6;
 }
 
 /*about us*/
 *, *:before, *:after {
-            box-sizing: inherit;
-        }
+    box-sizing: inherit;
+}
 
-        .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
 
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
 
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-        }
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
 
-        .container {
-            padding: 0 16px;
-        }
+.container {
+    padding: 0 16px;
+}
 
-            .container::after, .row::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
-        .title {
-            color: grey;
-        }
+.title {
+    color: grey;
+}
 
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-        }
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
 
-            .button:hover {
-                background-color: #555;
-            }
+    .button:hover {
+        background-color: #555;
+    }
 
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
 h2 {
     font-size: 30px;
     text-align: center;
@@ -290,40 +307,59 @@ h2 {
 /*about us*/
 
 
-
 /*quiz*/
 
 
 .quiz {
-	padding-top:20px;
+    padding-top: 20px;
 }
 
-.bouncy{
-	animation:bouncy 5s infinite linear;
-	position:relative;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #7cacde;
-	background-color:#63b8ee;
-	border-radius:6px;
-	border:1px solid #3866a3;
-	display:inline-block;
-	cursor:pointer;
-	color:#14396a;
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cacde;
+    background-color: #63b8ee;
+    border-radius: 6px;
+    border: 1px solid #3866a3;
+    display: inline-block;
+    cursor: pointer;
+    color: #14396a;
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
 }
+
 @keyframes bouncy {
-0%{top:0em}
-40%{top:0em}
-43%{top:-0.9em}
-46%{top:0em}
-48%{top:-0.4em}
-50%{top:0em}
-100%{top:0em;}
+    0% {
+        top: 0em
+    }
 
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
 }
 /*quiz*/
