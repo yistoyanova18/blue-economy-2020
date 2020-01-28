@@ -1,7 +1,9 @@
 html {
     box-sizing: border-box;
 }
-
+body {
+    background-color: #ffffcc;
+}
 p {
     font-family: font-family: "Times New Roman", Times, serif;
     margin: 0;
@@ -156,6 +158,11 @@ h1 {
     height: 850px;
 }
 /*index collums*/
+.video {
+    
+    width:700px;
+    height:390px;
+}
 .imageblue-economy {
     height: 200px;
     width: 100%;
