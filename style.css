@@ -1,9 +1,7 @@
 html {
     box-sizing: border-box;
 }
-body {
-    background-color: #ffffcc;
-}
+
 p {
     font-family: font-family: "Times New Roman", Times, serif;
     margin: 0;
