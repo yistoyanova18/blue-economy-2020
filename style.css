@@ -8,7 +8,7 @@ body {
 
 p {
     font-family: font-family: "Times New Roman", Times, serif;
-    font-size: 21px;
+    font-size: 20px;
     margin: 0;
     text-indent: 20px;
     letter-spacing: 2px;
@@ -154,11 +154,11 @@ h1 {
 }
 /*map*/
 .map {
+   
     border: 8px;
-    border-radius: 50px;
-    box-shadow: 1px 1px 2px white, 0 0 25px #0099cc;
     width: 1000px;
-    height: 850px;
+    height: 850px; 
+   
 }
 /*index collums*/
 .video {
@@ -166,15 +166,28 @@ h1 {
     width: 700px;
     height: 390px;
 }
-
+/*images in sidebar*/
 .imageblue-economy {
+    border: 3px;
+    border-color: black;
+    height: 200px;
+    width: 100%;
+}
+    /*for hover*/
+    .imageblue-economy:hover {
+        border: 3px;
+        border-color: black;
+        background-color: #d4d7de;
+    }
+/*images in sidebar2*/
+.imageblue-economy2 {
     border: 3px;
     border-color: black;
     height: 170px;
     width: 60%;
 }
     /*for hover*/
-    .imageblue-economy:hover {
+    .imageblue-economy2:hover {
         border: 3px;
         border-color: black;
         background-color: #d4d7de;
