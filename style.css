@@ -8,7 +8,7 @@ body {
 
 p {
     font-family: font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-indent: 20px;
     letter-spacing: 2px;
@@ -158,7 +158,7 @@ h1 {
     border: 8px;
     width: 1000px;
     height: 850px; 
-   
+   margin-top:50px;
 }
 /*index collums*/
 .video {
