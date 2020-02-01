@@ -6,10 +6,11 @@
 </head>
 <body>
 
+
     <div class="topnav">
-        <a class="active" href="index.html" style="font-size:20px;cursor:pointer"> Home</a>
+        <a class="active menu" href="index.html"> Home</a>
         <a href="hydropower.html"> Hydropower</a>
-        <a href="types-of-hydropower.html"><span style="font-size:20px;cursor:pointer" onclick="openNav()"> Types of hydropower</span></a>
+        <a href="types-of-hydropower.html"><span class="menu" onclick="openNav()"> Types of hydropower</span></a>
         <a href="map.html" class="menu">Map</a>
         <a href="game.html" class="menu">Game</a>
         <a href="quiz.html" class="menu">Quiz</a>
@@ -25,10 +26,12 @@
                 <a href="#">Tidal power</a>
             </div>
         </div>
+
         <script>
             function openNav() {
                 document.getElementById("myNav").style.width = "100%";
             }
+
             function closeNav() {
                 document.getElementById("myNav").style.width = "0%";
             }
