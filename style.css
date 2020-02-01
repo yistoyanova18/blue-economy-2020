@@ -13,7 +13,16 @@ p {
     text-indent: 20px;
     letter-spacing: 2px;
 }
-
+.menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo {
+    width: 80px;
+    height: 65px;
+    float: right;
+    margin-top: 0;
+}
 .topnav {
     overflow: hidden;
     background-color: #333;
