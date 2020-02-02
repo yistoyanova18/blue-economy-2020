@@ -1,0 +1,472 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #c1d7d7;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    margin: 0;
+    text-indent: 20px;
+    letter-spacing: 2px;
+}
+
+.menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+    height: 65px;
+    float: right;
+    margin-top: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #0099cc;
+            color: white;
+        }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+    .overlay a:hover, .overlay a:focus {
+        color: #1a8cff;
+    }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+h1 {
+    position: relative;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: calc(10px + 10vw);
+    font-weight: 700;
+    color: #f5f5f5;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    perspective: 500px;
+}
+
+    h1::before,
+    h1::after {
+        content: attr(aria-label);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+    }
+
+    h1::before {
+        animation: floatAbove 3.5s ease-in-out infinite;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    }
+
+    h1::after {
+        opacity: 0.65;
+        filter: blur(0.02em);
+        transform: translate(-50%, -50%) rotateX(21deg);
+        animation: floatBelow 3.5s ease-in-out infinite;
+        -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    }
+
+@keyframes floatAbove {
+    50% {
+        transform: translate(-50%, -60%);
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+    }
+}
+
+@keyframes floatBelow {
+    50% {
+        transform: translate(-50%, -60%) rotateX(10deg);
+        -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+    }
+}
+
+.waves {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+/*map*/
+.map {
+    border: 8px;
+    width: 1000px;
+    height: 850px;
+    margin-top: 50px;
+}
+/*index collums*/
+.video {
+    margin: 20px;
+    width: 700px;
+    height: 390px;
+}
+/*images in sidebar*/
+.imageblue-economy {
+    border: 3px;
+    border-color: black;
+    height: 200px;
+    width: 100%;
+}
+    /*for hover*/
+    .imageblue-economy:hover {
+        border: 3px;
+        border-color: black;
+        background-color: #d4d7de;
+    }
+/*images in sidebar2*/
+.imageblue-economy2 {
+    border: 3px;
+    border-color: black;
+    height: 170px;
+    width: 60%;
+}
+    /*for hover*/
+    .imageblue-economy2:hover {
+        border: 3px;
+        border-color: black;
+        background-color: #d4d7de;
+    }
+
+#site_content {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    padding: 0 24px 20px 20px;
+    background: #FFF;
+}
+
+.sidebar {
+    float: right;
+    width: 300px;
+    padding: 0 15px 20px 15px;
+}
+
+    .sidebar ul {
+        width: 198px;
+        padding: 4px 0 0 0;
+        margin: 4px 0 30px 0;
+    }
+
+    .sidebar li {
+        list-style: none;
+        padding: 0 0 7px 0;
+    }
+
+        .sidebar li a, .sidebar li a:hover {
+            padding: 0 0 0 40px;
+            display: block;
+            background: transparent url(link.png) no-repeat left center;
+        }
+
+            .sidebar li a.selected {
+                color: #7E2451;
+                text-decoration: none;
+            }
+
+#content {
+    text-align: left;
+    float: left;
+    width: 595px;
+    padding: 0;
+}
+
+    #content ul {
+        margin: 2px 0 22px 0px;
+    }
+
+        #content ul li {
+            list-style-type: none;
+            background: url(bullet.png) no-repeat;
+            margin: 0 0 6px 0;
+            padding: 0 0 4px 25px;
+            line-height: 1.5em;
+        }
+
+.footer {
+    margin-top: -100px;
+    height: 100px;
+    background-color: #0099cc;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+    clear: both;
+}
+
+/*about us*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgb(125, 135, 155);
+    margin: 8px;
+    background-color: white;
+}
+
+
+.container {
+    min-height: 100%;
+    padding: 0 16px;
+}
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.title {
+    color: grey;
+}
+/*contact*/
+
+.boxcontact {
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button2 {
+    border-radius: 20px;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #00cc00;
+    text-align: center;
+    cursor: pointer;
+    width: 100%
+}
+
+.button:hover {
+    background-color: #555;
+}
+/*contact*/
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #003399;
+}
+
+/*about us*/
+
+
+/*quiz*/
+
+
+.quiz {
+    padding-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.font {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.box {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cacde;
+    background-color: #63b8ee;
+    border-radius: 6px;
+    border: 1px solid #3866a3;
+    display: inline-block;
+    color: #14396a;
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+}
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cacde;
+    background-color: #63b8ee;
+    border-radius: 6px;
+    border: 1px solid #3866a3;
+    display: inline-block;
+    cursor: pointer;
+    color: #14396a;
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+/*quiz*/
