@@ -5,67 +5,60 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-
-    <div class="topnav">
-        <a class="active menu" href="index.html"> Home</a>
-        <a href="hydropower.html"> Hydropower</a>
-        <a href="types-of-hydropower.html"><span class="menu" onclick="openNav()"> Types of hydropower</span></a>
-        <a href="map.html" class="menu">Map</a>
-        <a href="game.html" class="menu">Game</a>
-        <a href="quiz.html" class="menu">Quiz</a>
-        <a href="About-us.html" class="menu">About Us</a>
-        <img src="logo.png" class="logo" alt="HPS">
-
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">What is Hydropower?</a>
-                <a href="#">Hydroelectric dam</a>
-                <a href="#">Wave power</a>
-                <a href="#">Tidal power</a>
+    <div class="main">
+        <div class="topnav">
+            <a class="active menu" href="index.html"> Home</a>
+            <a href="hydropower.html"> Hydropower</a>
+            <a href="types-of-hydropower.html"><span class="menu" onclick="openNav()"> Types of hydropower</span></a>
+            <a href="map.html" class="menu">Map</a>
+            <a href="game.html" class="menu">Game</a>
+            <a href="quiz.html" class="menu">Quiz</a>
+            <a href="About-us.html" class="menu">About Us</a>
+            <img src="logo.png" class="logo" alt="HPS">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">What is Hydropower?</a>
+                    <a href="#">Hydroelectric dam</a>
+                    <a href="#">Wave power</a>
+                    <a href="#">Tidal power</a>
+                </div>
             </div>
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            </script>
         </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
-    </div>
-    <div class="waves">
-        <h1 aria-label="Hydroelectric stations"></h1>
-    </div>
-    <div id="site_content">
-
-        <div class="sidebar">
-            <h2>What is this?</h2>
-            <p>
-                A hydroelectric power station consists of turbines that rely on a gravity flow of water from the dam to turn a turbine to generate electricity. The water can be either released to the river downstream of the dam or pumped back into the reservoir and reused.
-            </p>
-
-            <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/hydroelectric-power-stations">
-                <img src="heps.png" class="imageblue-economy" alt="HPS">
-            </a>
-            <p>
-                Generally, hydroelectric dams are built specifically for electricity generation and are not used for drinking or irrigation water. Hydropower provides 19% of the world's total electricity supply, and is used in over 150 countries, with 24 of these countries depending on it for 90% of their supply. The countries producing most hydroelectric energy are China, Canada, Brazil, USA, and Russia.
-            </p>
-
-            <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/hydroelectric-power-stations">
-                <img src="HPSplan.png" class="imageblue-economy" alt="HPS">
-            </a>
-
+        <div class="waves">
+            <h1 aria-label="Hydroelectric stations"></h1>
         </div>
-        <div class="content">
-            <div style=" margin-top:30px;">
-                <h2>Map of hydroelectric power stations in Bulgaria!</h2>
+        <div id="site_content">
+            <div class="sidebar">
+                <h2>What is this?</h2>
+                <p>
+                    A hydroelectric power station consists of turbines that rely on a gravity flow of water from the dam to turn a turbine to generate electricity. The water can be either released to the river downstream of the dam or pumped back into the reservoir and reused.
+                </p>
+                <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/hydroelectric-power-stations">
+                    <img src="heps.png" class="imageblue-economy" alt="HPS">
+                </a>
+                <p>
+                    Generally, hydroelectric dams are built specifically for electricity generation and are not used for drinking or irrigation water. Hydropower provides 19% of the world's total electricity supply, and is used in over 150 countries, with 24 of these countries depending on it for 90% of their supply. The countries producing most hydroelectric energy are China, Canada, Brazil, USA, and Russia.
+                </p>
+                <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/hydroelectric-power-stations">
+                    <img src="HPSplan.png" class="imageblue-economy" alt="HPS">
+                </a>
             </div>
-            <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1p9BSIkNbThfz0xEnBGnwERJu6BxR8H2o"></iframe>
-
+            <div class="content">
+                <div style=" margin-top:30px;">
+                    <h2>Map of hydroelectric power stations in Bulgaria!</h2>
+                </div>
+                <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1p9BSIkNbThfz0xEnBGnwERJu6BxR8H2o"></iframe>
+            </div>
         </div>
     </div>
     <div class="footer"> <p>Footer</p> </div>
