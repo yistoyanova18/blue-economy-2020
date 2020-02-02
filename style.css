@@ -3,26 +3,32 @@ html {
 }
 
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #c1d7d7;
 }
 
 p {
-    font-family:  "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 18px;
     margin: 0;
     text-indent: 20px;
     letter-spacing: 2px;
 }
+
 .menu {
     font-size: 20px;
     cursor: pointer;
 }
+
 .logo {
     width: 80px;
     height: 65px;
     float: right;
     margin-top: 0;
 }
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -163,11 +169,10 @@ h1 {
 }
 /*map*/
 .map {
-   
     border: 8px;
     width: 1000px;
-    height: 850px; 
-   margin-top:50px;
+    height: 850px;
+    margin-top: 50px;
 }
 /*index collums*/
 .video {
@@ -258,16 +263,17 @@ h1 {
         }
 
 .footer {
-    height: 70px;
-    width: 100%;
+    margin-top: -100px;
+    height: 100px;
     background-color: #0099cc;
     color: white;
     text-align: center;
     margin-bottom: 0;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     opacity: 0.6;
+    clear: both;
 }
 
 /*about us*/
@@ -290,6 +296,7 @@ h1 {
 
 
 .container {
+    min-height: 100%;
     padding: 0 16px;
 }
 
@@ -298,6 +305,11 @@ h1 {
         clear: both;
         display: table;
     }
+
+.main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
 
 .title {
     color: grey;
@@ -383,19 +395,18 @@ h2 {
 
 .quiz {
     padding-top: 20px;
-	font-family:  "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .font {
-	font-family:  "Times New Roman", Times, serif;
-	font-size: 20px;
-
-	margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 .box {
-	position: relative;
-    font-family:  "Times New Roman", Times, serif;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     font-weight: bold;
     padding: 6px 24px;
@@ -405,7 +416,7 @@ h2 {
     border-radius: 6px;
     border: 1px solid #3866a3;
     display: inline-block;
-	color: #14396a;
+    color: #14396a;
     box-shadow: inset 0px 1px 0px 0px #bee2f9;
     background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
 }
