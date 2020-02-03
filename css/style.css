@@ -116,8 +116,7 @@ h1 {
     perspective: 500px;
 }
 
-    h1::before,
-    h1::after {
+    h1::before, h1::after {
         content: attr(aria-label);
         position: absolute;
         top: 0;
@@ -262,8 +261,6 @@ h1 {
             padding: 0 0 4px 25px;
             line-height: 1.5em;
         }
-
-
 /*about us*/
 *, *:before, *:after {
     box-sizing: inherit;
@@ -281,7 +278,6 @@ h1 {
     margin: 8px;
     background-color: white;
 }
-
 
 .container {
     min-height: 100%;
@@ -303,7 +299,6 @@ h1 {
     color: grey;
 }
 /*contact*/
-
 .boxcontact {
     background-color: #e6e6e6;
     padding: 20px;
@@ -374,13 +369,8 @@ h2 {
     text-transform: uppercase;
     color: #003399;
 }
-
 /*about us*/
-
-
 /*quiz*/
-
-
 .quiz {
     padding-top: 20px;
     font-family: "Times New Roman", Times, serif;
@@ -458,7 +448,6 @@ h2 {
     }
 }
 /*quiz*/
-
 .footer {
     margin-top: -100px;
     height: 100px;
