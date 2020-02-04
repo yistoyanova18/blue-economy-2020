@@ -1,20 +1,4 @@
- function SENT() {
-                document.getElementById("demo").innerHTML = "SENT";
-            }
-            function SENT2() {
-                document.getElementById("demo2").innerHTML = "SENT";
-            }
-             function SENT3() {
-                document.getElementById("demo3").innerHTML = "SENT";
-            }
 
-function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
               var numQues = 15;
 
     var numChoi = 3;
