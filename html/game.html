@@ -47,10 +47,10 @@
                     }
                     function setBG() {
                         if (Math.round(Math.random())) {
-                            return "plasticbottle.webp";
+                            return "../images/station.png";
                         }
                         else {
-                            return "fish.webp";
+                            return "../images/bomb.png";
                         }
                     }
 
@@ -68,10 +68,10 @@
                         //set data and bg based on data
                         thisBox.data("test", Math.round(Math.random()));
                         if (thisBox.data("test")) {
-                            thisBox.css({ "background": "url('plasticbottle.webp')", "background-size": "contain" });
+                            thisBox.css({ "background": "url('../images/station.png')", "background-size": "contain" });
                         }
                         else {
-                            thisBox.css({ "background": "url('fish.webp')", "background-size": "contain" });
+                            thisBox.css({ "background": "url('../images/bomb.png')", "background-size": "contain" });
                         }
 
                         //insert gift element
