@@ -7,9 +7,17 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ffe066;
 }
-
+.bg {
+    /* The image used */
+    background-image:url('../images/sun2.png');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 p {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 18px;
@@ -33,7 +41,7 @@ h2 {
 
 .logo {
     width: 80px;
-    height: 60px;
+    height: 80px;
     position: absolute;
     top: 0px;
     right: 0;
@@ -42,17 +50,20 @@ h2 {
 .topnav {
     overflow: hidden;
     background-color: #333;
-    height: 50px;
+    opacity:0.9;
+    height: 60px;
     width: 100%;
 }
 
     .topnav a {
         float: left;
-        color: #ffe066;
+        font-family: Lucida, sans-serif;
+        color: #0099cc;
+        height: 60px;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 23px;
     }
 
         .topnav a:hover {
@@ -71,6 +82,7 @@ h2 {
     overflow: hidden;
     margin: 0 auto 0 auto;
     padding: 0 24px 20px 20px;
+    box-shadow: 0 8px 16px 0 rgb(125, 135, 155);
     background: #FFF;
 }
 
@@ -177,7 +189,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
+    background: #3f81b3 url(https://live.staticflickr.com/848/43189943854_189a532d7c_b.jpg) no-repeat center;
     background-size: cover;
     overflow: hidden;
     width: 100%;
@@ -396,8 +408,6 @@ input[type=text], select, textarea {
 .footer {
     margin-top: -100px;
     height: 100px;
-    background-color: #ffe066;
-    color: white;
     text-align: center;
     margin-bottom: 0;
     position: relative;
