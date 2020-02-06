@@ -160,8 +160,8 @@ h1 {
     }
 
     h1::after {
-        opacity: 0.65;
-        filter: blur(0.02em);
+        opacity: 0,65;
+        filter: blur(0.03em);
         transform: translate(-50%, -50%) rotateX(21deg);
         animation: floatBelow 3.5s ease-in-out infinite;
         -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
@@ -431,11 +431,12 @@ h3 {
 }
 /*The style that shapes page in the site(Game)*/
 .game {
-    background: #efefef;
-    width: 100%;
-    height: 750px;
+    background: #cccccc;
+    width: 90%;
+    height:750px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgb(125, 135, 155);
 }
 
 .score {
@@ -456,6 +457,7 @@ h3 {
     transition: transform 1.5s linear;
     cursor: pointer;
     z-index: 100;
+
 }
 
 .move {
