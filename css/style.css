@@ -10,7 +10,7 @@ body {
 }
 .bg {
     /* The image used */
-    background-image:url('../images/sun2.png');
+    background-image:url('../images/sun.png');
     /* Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -269,6 +269,11 @@ h1 {
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color:white;
+}
+textcontact {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 /*The style that shapes contact form in About us page <-*/
 .boxcontact {
