@@ -24,6 +24,7 @@ p {
     margin: 0;
     text-indent: 20px;
     letter-spacing: 2px;
+    color:black;
 }
 
 h2 {
@@ -247,11 +248,9 @@ h1 {
 }
 
 .card {
-    box-shadow: 0 8px 16px 0 rgb(125, 135, 155);
+    box-shadow: 0 12px 24px 8px #333333;
     margin: 8px;
-    background-color: white;
 }
-
 .container {
     min-height: 100%;
     padding: 0 16px;
@@ -263,7 +262,7 @@ h1 {
         display: table;
     }
 .title {
-    color: grey;
+    color: #d9d9d9;
 }
 .textourteam {
     font-size: 40px;
@@ -277,20 +276,23 @@ textcontact {
 }
 /*The style that shapes contact form in About us page <-*/
 .boxcontact {
-    background-color: #e6e6e6;
     padding: 20px;
 }
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+.boxcontacttext {
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
 
 input[type=text], select, textarea {
     width: 100%;
@@ -321,7 +323,7 @@ input[type=text], select, textarea {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #00cc00;
+    background-color: #0099cc;
     text-align: center;
     cursor: pointer;
     width: 100%
